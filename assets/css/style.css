@@ -68,3 +68,90 @@ header {
   font-weight: bold;;
   line-height: 1.2;
 }
+/* @end HEADER */
+
+/* SECTION ABOUT */
+.about {
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.about .info-block {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 5rem;
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.info1 img {
+  width: 3.5rem;
+}
+
+.info2 {
+  margin: 0 6rem;
+}
+
+.info2 img,
+.info3 img {
+  width: 5rem;
+}
+/* @end SECTION HEADER */
+
+
+/* SECTION ABOUT */
+.company {
+  width: 960px;
+  margin: 0 auto 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.company .co-block {
+  width: 35%;
+  margin-right: 5%;
+}
+
+.company .co-block h3 {
+  width: 60%;
+  margin-bottom: 1rem;
+  padding: .5rem 0 .5rem 1.25rem;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: cadetblue;
+}
+
+.company .co-block p {
+  line-height: 1.5;
+}
+/* @end SECTION HEADER */
+
+
+/* FOOTER */
+footer {
+  width: 960px;
+  margin: 0 auto;
+  background-color: azure;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer img {
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
+}
+
+
+
+/* @end FOOTER */
