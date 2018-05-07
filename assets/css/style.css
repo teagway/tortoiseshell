@@ -3,8 +3,12 @@ PROJECT: TORTOISESHELL
 */
 
 html {
-  font-family: Helvetica;
+  font-family: "Helvetica", sans-serif;
   font-size: 18px;
+  background-color: white;
+}
+
+body {
   line-height: 1.4;
 }
 
@@ -17,7 +21,7 @@ header {
 }
 
 .head-container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   padding-top: 1rem;
 }
@@ -51,13 +55,14 @@ header {
 }
 
 .head-top nav ul {
+  margin-right: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .head-top nav ul li {
-  margin: 1rem 2rem 1rem 0;
+  padding: 0 1rem;
 }
 
 .head-mid {
@@ -72,13 +77,14 @@ header {
   font-size: 2rem;
   font-weight: bold;;
   line-height: 1.2;
+  text-transform: uppercase;
 }
 /* @end HEADER */
 
 /* SECTION ABOUT
 =================================== */
 .about {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -94,7 +100,6 @@ header {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  line-height: 1.5;
 }
 
 .about .info1 img {
@@ -116,7 +121,7 @@ header {
 /* SECTION ABOUT
 =================================== */
 .company {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto 5rem;
   display: flex;
   justify-content: center;
@@ -126,13 +131,12 @@ header {
 .company .co-block {
   width: 35%;
   margin-right: 5%;
+  margin-bottom: 4rem;
 }
 
-.company .co-block h3 {
-  width: 60%;
-  margin-bottom: 1rem;
-  padding: .5rem 0 .5rem 1.25rem;
-  font-size: 1rem;
+.company .co-block .title {
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
   color: white;
   font-weight: bold;
   text-transform: uppercase;
@@ -140,7 +144,7 @@ header {
 }
 
 .company .co-block p {
-  line-height: 1.5;
+  padding: 1rem 0;
 }
 /* @end SECTION HEADER */
 
@@ -148,8 +152,9 @@ header {
 /* FOOTER
 =================================== */
 footer {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
+  padding: 4rem 2rem;
   background-color: azure;
   display: flex;
   justify-content: flex-start;
@@ -158,13 +163,13 @@ footer {
 
 footer img {
   height: 1.5rem;
-  margin: 4rem 1rem 4rem 4rem;
+  margin: 0 1rem 0 2rem;
 }
 /* @end FOOTER */
 
 
 /* MEDIA QUERIES */
-/* <1040 MEDIA QUERIES
+/* <1024 MEDIA QUERIES
 =================================== */
 @media only screen and (max-width: 1024px) {
   /* <1024 HEADER */
@@ -185,22 +190,8 @@ footer img {
     padding: .75rem 4rem;
     font-size: 1.33rem;
   }
-
-  /* <1024 SECTION COMBINED */
-  .about, .company, footer {
-    width: 100%;
-  }
-
-  /* <1024 SECTION COMPANY */
-  .company .co-block {
-    width: 40%;
-  }
-
-  .company .co-block h3 {
-    width: 75%;
-  }
 }
-/* @END <1040 MEDIA QUERIES */
+/* @END <1024 MEDIA QUERIES */
 
 /* <570 MEDIA QUERIES
 ======================================== */
@@ -236,7 +227,6 @@ footer img {
   .head-mid h1 {
     padding: 1rem 0;
     font-size: 1rem;
-    line-height: 1.2;
   }
   /* @ END <570 HEADER */
 
@@ -276,21 +266,21 @@ footer img {
     margin-bottom: 4rem;
   }
 
-  .company .co-block h3 {
-    width: 100%;
+  .company .co-block .title {
+    max-width: 100%;
     padding-left: 0;
     text-align: center;
   }
 
   .company .co-block p {
-    padding: 0 0.45rem;
+    padding: 1rem;
     font-size: 0.77rem;
   }
   /* @END <570 SECTION COMPANY */
 
   /* <570 FOOTER */
   footer img {
-    margin: 4rem auto;
+    margin: 0 auto;
   }
 
   footer p {
